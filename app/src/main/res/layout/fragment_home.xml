@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ImageView
+        android:id="@+id/dr_img"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/doctor"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="25sp"
+        />
+    <TextView
+        android:id="@+id/user_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/dr_img"
+        app:layout_constraintTop_toTopOf="@id/dr_img"
+        android:layout_marginStart="20sp"
+        android:text="doctor name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/type_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/user_txt"
+        app:layout_constraintTop_toBottomOf="@id/user_txt"
+        android:text="Specialist , HR"
+        android:textStyle="bold"
+        android:textColor="@color/color1"
+        android:textSize="10sp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/dr_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20sp"
+        android:src="@drawable/notification"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardh1"
+        android:layout_width="0dp"
+        android:layout_height="195sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="50sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardh3"
+        app:layout_constraintTop_toBottomOf="@id/dr_img"
+        app:cardBackgroundColor="@color/brown"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Employee"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img1" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/emp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardh2"
+        android:layout_width="0dp"
+        android:layout_height="160sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="@id/cardh1"
+        app:layout_constraintEnd_toEndOf="@id/cardh1"
+        app:layout_constraintTop_toBottomOf="@id/cardh1"
+        android:backgroundTint="@color/blue3"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img2"
+                android:layout_marginTop="5sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Reports"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/report"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardh3"
+        android:layout_width="0dp"
+        android:layout_height="160sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        app:layout_constraintStart_toEndOf="@id/cardh1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardh1"
+        android:backgroundTint="#5fdc89"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img3"
+                android:layout_marginTop="5sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Tasks"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/tasks"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardh4"
+        android:layout_width="0dp"
+        android:layout_height="195sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="@id/cardh3"
+        app:layout_constraintEnd_toEndOf="@id/cardh3"
+        app:layout_constraintTop_toBottomOf="@id/cardh3"
+        android:backgroundTint="@color/blue1"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img4"
+                android:layout_marginTop="5sp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="attendance - leaving"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/attend"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardh5"
+        android:layout_width="0dp"
+        android:layout_height="120sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="@id/cardh1"
+        app:layout_constraintEnd_toEndOf="@id/cardh3"
+        app:layout_constraintTop_toBottomOf="@id/cardh4"
+        android:backgroundTint="@color/brown"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reports_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="80sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Text"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                app:layout_constraintStart_toEndOf="@id/txt5"
+                android:layout_marginStart="40sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/report"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
